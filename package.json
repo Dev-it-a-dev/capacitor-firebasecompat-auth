@@ -1,0 +1,58 @@
+{
+	"name": "capacitor-firebasecompat-auth",
+	"version": "3.0.0",
+	"description": "Capacitor plugin for Firebase Authentication, forked repo to fix firebase import errors",
+	"main": "dist/esm/index.js",
+	"types": "dist/esm/index.d.ts",
+	"scripts": {
+		"build": "npm run clean && tsc --project tsconfig.json",
+		"pack": "npm pack && mv capacitor-firebasecompat-auth-3.*.tgz capacitor-firebasecompat-auth-nightly.tgz",
+		"clean": "rimraf ./dist",
+		"watch": "tsc --watch",
+		"prepublishOnly": "npm run build"
+	},
+	"author": "Bernardo Baumblatt",
+	"license": "MIT",
+	"dependencies": {
+		"@capacitor/core": "next"
+	},
+	"devDependencies": {
+		"@capacitor/android": "next",
+		"@capacitor/ios": "next",
+		"firebase": "^9.9.1",
+		"rimraf": "^3.0.0",
+		"rxjs": "^7.5.6",
+		"typescript": "^4.7.4"
+	},
+	"peerDependencies": {
+		"firebase": "^8.3.0",
+		"rxjs": "~6.6.6"
+	},
+	"files": [
+		"alternative/",
+		"dist/",
+		"ios/",
+		"android/",
+		"CapacitorFirebaseAuth.podspec"
+	],
+	"keywords": [
+		"capacitor",
+		"plugin",
+		"native"
+	],
+	"capacitor": {
+		"ios": {
+			"src": "ios"
+		},
+		"android": {
+			"src": "android"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Dev-it-a-dev/capacitor-firebasecompat-auth.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Dev-it-a-dev/capacitor-firebasecompat-auth.git/issues"
+	}
+}
