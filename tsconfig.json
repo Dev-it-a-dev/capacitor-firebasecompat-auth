@@ -1,0 +1,21 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"declaration": true,
+		"experimentalDecorators": true,
+		"lib": ["dom", "es2017"],
+		"module": "es2020",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "dist/esm",
+		"sourceMap": true,
+		"target": "es2017",
+		"esModuleInterop": true
+	},
+	"files": [
+		"src/index.ts",
+		"src/alternative/index.ts"
+	]
+}
